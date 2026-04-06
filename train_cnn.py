@@ -1,6 +1,6 @@
 import os.path
 import torch.optim
-from datasets import AnimalDataset
+from dataset_animal import AnimalDataset
 from models import SimpleCNN
 from torch.utils.data import DataLoader
 import torch.nn as nn
