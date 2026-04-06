@@ -15,12 +15,12 @@ import shutil
 
 def get_args():
     parser = ArgumentParser(description="CNN training")
-    parser.add_argument("--root", "-r", type=str, default="/content/my_dataset/animals", help="Root of the dataset")
+    parser.add_argument("--root", "-r", type=str, default=None, help="Root of the dataset")
     parser.add_argument("--epochs", "-e", type=int, default=100, help="Number of epochs")
     parser.add_argument("--batch-size", "-b", type=int, default=8, help="Batch size")
     parser.add_argument("--image-size", "-i", type=int, default=224, help="Image size")
-    parser.add_argument("--logging", "-l", type=str, default="/content/drive/MyDrive/tensorboard")
-    parser.add_argument("--trained_models", "-t", type=str, default="/content/drive/MyDrive/trained_model")
+    parser.add_argument("--logging", "-l", type=str, default=None")
+    parser.add_argument("--trained_models", "-t", type=str, default=None")
     parser.add_argument("--checkpoint", "-c", type=str, default=None)
     args = parser.parse_args()
     return args
