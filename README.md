@@ -81,8 +81,6 @@ Mô hình được huấn luyện trên bộ dữ liệu **Animals-10** để nh
 python train_cnn.py
 ```
 *💡 Lưu ý: Bạn có thể theo dõi biểu đồ Loss và Accuracy theo thời gian thực bằng cách mở một terminal mới và chạy lệnh `tensorboard --logdir=tensorboard`.*
-https://github.com/user-attachments/assets/a85ae70a-0143-421c-9fb2-789d67d074cd
-https://github.com/user-attachments/assets/d30f097a-acb1-4fb3-86f1-e2fca829731b
 ### 📊 Kết quả huấn luyện (Training Results)
 
 Dưới đây là biểu đồ thể hiện quá trình hội tụ của Loss và độ chính xác (Accuracy) trên tập Validation sau các epoch:
