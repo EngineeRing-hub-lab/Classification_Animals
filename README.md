@@ -4,8 +4,9 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?logo=PyTorch&logoColor=white)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> Dự án này ứng dụng Deep Learning để tự động nhận diện và phân loại các loài động vật từ hình ảnh thông qua mạng nơ-ron tích chập (CNN).
+> Dự án này ứng dụng Deep Learning để tự động nhận diện và phân loại các loài động vật từ hình ảnh thông qua mạng nơ-ron tích chập (CNN)
 
+> ĐÂY LÀ PROJECT ĐẦU TIÊN CỦA TÔI VỀ DEEP LEARNING NÊN NẾU CÓ GÌ CHƯA ĐƯỢC HOÀN THIỆN THÌ CŨNG MONG CÁC BẠN HIỂU CHO NHÉ HIHIHI
 ---
 
 ## 📑 Mục lục
@@ -80,6 +81,16 @@ Mô hình được huấn luyện trên bộ dữ liệu **Animals-10** để nh
 python train_cnn.py
 ```
 *💡 Lưu ý: Bạn có thể theo dõi biểu đồ Loss và Accuracy theo thời gian thực bằng cách mở một terminal mới và chạy lệnh `tensorboard --logdir=tensorboard`.*
+https://github.com/user-attachments/assets/a85ae70a-0143-421c-9fb2-789d67d074cd
+https://github.com/user-attachments/assets/d30f097a-acb1-4fb3-86f1-e2fca829731b
+### 📊 Kết quả huấn luyện (Training Results)
+
+Dưới đây là biểu đồ thể hiện quá trình hội tụ của Loss và độ chính xác (Accuracy) trên tập Validation sau các epoch:
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a85ae70a-0143-421c-9fb2-789d67d074cd" width="48%" title="Training Loss" alt="Training Loss">
+  <img src="https://github.com/user-attachments/assets/d30f097a-acb1-4fb3-86f1-e2fca829731b" width="48%" title="Validation Accuracy" alt="Validation Accuracy">
+</p>
 
 ### Kiểm thử (Inference)
 Để sử dụng mô hình dự đoán trên các hình ảnh mới:
@@ -110,5 +121,4 @@ model.load_state_dict(torch.load('best.pt', map_location=torch.device('cpu')))
 model.eval()
 
 # Tiến hành dự đoán...
-```
 ```
